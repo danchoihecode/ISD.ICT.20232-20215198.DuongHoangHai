@@ -24,9 +24,13 @@
 (Steps in the basic flow of "Select rush order delivery" use case)
 
 8a. Customer selects rush order delivery method.
+
 8a1. Software checks eligibility for rush order delivery successfully.
+
 8a2. Software requests additional rush order delivery information from the customer and provides other information.
+
 8a3. Customer provides rush order delivery details.
+
 8a4. Software recalculates the delivery fees and updates the corresponding invoice.
 
 Continue to step 9.
