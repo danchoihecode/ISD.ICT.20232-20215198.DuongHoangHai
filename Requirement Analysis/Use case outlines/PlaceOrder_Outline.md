@@ -6,20 +6,37 @@
 2. Customer requests to place an order.
 3. Software checks inventory availability successfully (inventory is sufficient).
 4. Software asks customer to set up delivery information.
-5. Customer enters delivery information correctly.
+5. Customer enters delivery information.
 6. Software calculates delivery fee and total product price.
 7. Software displays and temporarily saves invoice information.
 8. Customer chooses the usual delivery method.
+9. Software checks the input information successfully.
 
-(Steps 9-13 are steps in the basic flow of "Pay for the order" use case)
+(Steps 10-14 are steps in the basic flow of "Pay for the order" use case)
 
-9. Customer selects payment method supported by VNPay.
-10. Customer provides the necessary information as requested by VNPay to successfully complete the transaction.
-11. Software confirms transaction and displays transaction details.
-12. Software sends all order and transaction information to customer's email.
-13. Software records the transaction information and the successfully paid order.
+10. Customer selects payment method supported by VNPay.
+11. Customer provides the necessary information as requested by VNPay to successfully complete the transaction.
+12. Software confirms transaction and displays transaction details.
+13. Software sends all order and transaction information to customer's email.
+14. Software records the transaction information and the successfully paid order.
 
-## Alternative Flow
+## Alternative Flows
+
+3a. Software notices that the inventory quantity is insufficient.
+
+3a1. Software asks customer to update the cart and displays the inventory quantity for each unmet product.
+
+3a2. Customer updates the cart.
+
+Return to step 2.
+
+9a. Software notices that the input information is invalid.
+
+9a1.Software asks customer to update information.
+
+9a2.Customer updates information.
+
+Return to step 6.
 
 (Steps in the basic flow of "Select rush order delivery" use case)
 
